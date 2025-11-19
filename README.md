@@ -1,6 +1,6 @@
 
 
-# **Vite x Vanilla TS x HTMX**
+### **Vite x Vanilla TS x HTMX**
 # How to install and run this template
 - This template includes the SSR implementation of Vite 
 - Includes Vanilla TS
@@ -8,7 +8,7 @@
 - current dependencies: Nodemon
 - to do: 
     - Add PG (w/drizzle)
-    - get 
+    - JS frontend package (animate.js possibly)
 
 
 **Feel Free to add to me!**
