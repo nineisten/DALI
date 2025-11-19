@@ -12,9 +12,16 @@ export function render(_url: string) {
         <img src="${typescriptLogo}" class="logo vanilla" alt="JavaScript logo" />
       </a>
     </div>
-    <a href="http://htmx.org" target="_blank">
-        <img src="/htmx.svg" class="logo htmx" alt="htmx logo"height="10"/>
-      </a>
+    <div 
+      id="greeting" 
+      hx-get="/api/hello" 
+      hx-trigger="click" 
+      hx-target="#greeting" 
+      hx-swap="innerHTML"
+      hx-push-url="hello"
+      >
+        <img src="/htmx.svg" class="logo htmx" alt="htmx logo"/>
+      </div>
       <div class="card">
         <button id="counter" type="button"></button>
       </div>

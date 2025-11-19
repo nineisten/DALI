@@ -1,5 +1,7 @@
 import fs from 'node:fs/promises'
 import express from 'express'
+import router from './api/router/routeHandler.js'
+
 
 // Constants
 const isProduction = process.env.NODE_ENV === 'production'
@@ -13,7 +15,7 @@ const templateHtml = isProduction
 
 // Create http server
 const app = express()
-
+app.use('/api',router)
 // Add Vite or respective production middlewares
 /** @type {import('vite').ViteDevServer | undefined} */
 let vite
@@ -33,10 +35,15 @@ if (!isProduction) {
 }
 
 // Serve HTML
-app.use('*all', async (req, res) => {
+app.use('*all', async (req, res,next) => {
   try {
+    //swap the base url
     const url = req.originalUrl.replace(base, '')
 
+    // Skip SSR for API requests
+    if (req.originalUrl.startsWith('/api')) {
+    return next(); 
+  }
     /** @type {string} */
     let template
     /** @type {import('./src/entry-server.ts').render} */
@@ -64,7 +71,6 @@ app.use('*all', async (req, res) => {
     res.status(500).end(e.stack)
   }
 })
-
 // Start http server
 app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`)
