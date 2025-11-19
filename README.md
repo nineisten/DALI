@@ -2,7 +2,11 @@
 
 
 # How to install and run this template
-- This template was adapted from Vite's create-vite-extra template [ssr-vanilla-ts](https://github.com/bluwy/create-vite-extra)
+- THis template includes the ssr implementation of vite 
+- Includes Vanilla TS & topped off with a healthy serving of HTMX
+- dependencies: Nodemon
+
+**Feel Free to add to me!**
 
 ### 1. Clone the repo
 ```bash
@@ -28,3 +32,5 @@ pnpm run dev
 pnpm build   # compile TypeScript
 pnpm start   # run the production server
 ```
+
+- This template was adapted from Vite's create-vite-extra template [ssr-vanilla-ts](https://github.com/bluwy/create-vite-extra)
