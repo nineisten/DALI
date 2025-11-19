@@ -2,6 +2,7 @@
 
 
 # How to install and run this template
+- This template was adapted from Vite's create-vite-extra template [https://github.com/bluwy/create-vite-extra][ssr-vanilla-ts]
 
 ### 1. Clone the repo
 ```bash
@@ -11,9 +12,9 @@ cd my-project
 
 ### 2. Install dependencies with pnpm
 ```bash
-    pnpm install && pnpm approve-builds
-    # selct from dropdown 
-    # press y to continue
+pnpm install && pnpm approve-builds
+# selct from dropdown 
+# press y to continue
 ```
 
 ### 3. Start the development server (with hot reload)
@@ -24,6 +25,6 @@ pnpm run dev
 ```
 ### 4. production stuff
 ```bash
-    pnpm build   # compile TypeScript
-    pnpm start   # run the production server
+pnpm build   # compile TypeScript
+pnpm start   # run the production server
 ```
