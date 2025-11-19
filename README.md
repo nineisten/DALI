@@ -2,9 +2,14 @@
 
 
 # How to install and run this template
-- THis template includes the ssr implementation of vite 
-- Includes Vanilla TS & topped off with a healthy serving of HTMX
-- dependencies: Nodemon
+- This template includes the SSR implementation of Vite 
+- Includes Vanilla TS
+- Topped off with a healthy serving of HTMX
+- current dependencies: Nodemon
+- to do: 
+    - Add PG (w/drizzle)
+    - get 
+
 
 **Feel Free to add to me!**
 
