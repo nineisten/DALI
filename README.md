@@ -38,4 +38,4 @@ pnpm build   # compile TypeScript
 pnpm start   # run the production server
 ```
 
-- This template was adapted from Vite's create-vite-extra template [ssr-vanilla-ts](https://github.com/bluwy/create-vite-extra)
+**This template was adapted from Vite's create-vite-extra template [ssr-vanilla-ts](https://github.com/bluwy/create-vite-extra)**
