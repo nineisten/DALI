@@ -2,7 +2,7 @@
 
 
 # How to install and run this template
-- This template was adapted from Vite's create-vite-extra template [https://github.com/bluwy/create-vite-extra][ssr-vanilla-ts]
+- This template was adapted from Vite's create-vite-extra template [ssr-vanilla-ts](https://github.com/bluwy/create-vite-extra)
 
 ### 1. Clone the repo
 ```bash
