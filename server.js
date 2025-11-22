@@ -15,7 +15,7 @@ const templateHtml = isProduction
 
 // Create http server
 const app = express()
-app.use('/api',router)
+app.use('/portal',router)
 // Add Vite or respective production middlewares
 /** @type {import('vite').ViteDevServer | undefined} */
 let vite
@@ -41,7 +41,7 @@ app.use('*all', async (req, res,next) => {
     const url = req.originalUrl.replace(base, '')
 
     // Skip SSR for API requests
-    if (req.originalUrl.startsWith('/api')) {
+    if (req.originalUrl.startsWith('/portal')) {
     return next(); 
   }
     /** @type {string} */
