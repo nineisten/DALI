@@ -1,11 +1,10 @@
 
-# Zerve
+# DALI
 ### Vite x Vanilla TS x HTMX
 ## How to install and run this template
 - This template includes the SSR implementation of Vite 
 - Includes Vanilla TS
 - Topped off with a healthy serving of HTMX
-- current dependencies: Nodemon
 - to do: 
     - Add PG (w/drizzle)
     - JS frontend package (animate.js possibly)
