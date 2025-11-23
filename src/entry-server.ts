@@ -13,6 +13,7 @@ export function render(_url: string) {
       </a>
     </div>
     <div 
+      class="hello"
       id="greeting" 
       hx-get="portal/hello" 
       hx-trigger="click" 
