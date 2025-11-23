@@ -14,7 +14,7 @@ export function render(_url: string) {
     </div>
     <div 
       id="greeting" 
-      hx-get="/api/hello" 
+      hx-get="portal/hello" 
       hx-trigger="click" 
       hx-target="#greeting" 
       hx-swap="innerHTML"

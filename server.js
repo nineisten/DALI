@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
 import express from 'express'
-import router from './api/router/routeHandler.js'
+import router from './api/router/index.ts'
 
 
 // Constants
